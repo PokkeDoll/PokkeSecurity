@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.List;
 
 public class JailSetCommand implements TabExecutor {
-  private PokkeSecurity plugin;
+  private final PokkeSecurity plugin;
 
   public JailSetCommand(PokkeSecurity plugin) {
     this.plugin = plugin;

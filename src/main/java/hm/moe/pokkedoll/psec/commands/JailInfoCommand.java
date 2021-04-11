@@ -12,7 +12,7 @@ import java.util.List;
 
 public class JailInfoCommand implements TabExecutor {
 
-  private PokkeSecurity plugin;
+  private final PokkeSecurity plugin;
 
   public JailInfoCommand(PokkeSecurity plugin) {
     this.plugin = plugin;

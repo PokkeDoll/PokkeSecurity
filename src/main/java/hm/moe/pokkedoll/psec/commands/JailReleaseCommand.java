@@ -14,7 +14,7 @@ import java.util.List;
 
 public class JailReleaseCommand implements TabExecutor {
 
-  private PokkeSecurity plugin;
+  private final PokkeSecurity plugin;
 
   public JailReleaseCommand(PokkeSecurity plugin) {
     this.plugin = plugin;

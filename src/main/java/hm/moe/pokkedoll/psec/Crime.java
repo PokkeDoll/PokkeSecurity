@@ -1,6 +1,5 @@
 package hm.moe.pokkedoll.psec;
 
-import org.bukkit.Location;
 import org.bukkit.configuration.serialization.ConfigurationSerializable;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;

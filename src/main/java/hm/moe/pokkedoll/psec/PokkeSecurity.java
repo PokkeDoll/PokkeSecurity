@@ -77,19 +77,6 @@ public class PokkeSecurity extends JavaPlugin {
             .forEach(key -> jails.put(key, getConfig().getLocation("jails." + key)));
   }
 
-  public @Nullable String getUUID(String name) {
-    if(name.length() > 16) {
-      return name;
-    } else {
-      OfflinePlayer offlinePlayer = Bukkit.getOfflinePlayer(name);
-      if(offlinePlayer.hasPlayedBefore()) {
-        return offlinePlayer.getUniqueId().toString();
-      } else {
-        return null;
-      }
-    }
-  }
-
   public static long getTerm(String term) {
     if (term.equalsIgnoreCase("-1")) {
       return -1;
@@ -118,10 +105,6 @@ public class PokkeSecurity extends JavaPlugin {
     getConfig().save(configFile);
   }
 
-  /**
-   * プレイヤーを収監する！
-   * @param player
-   */
   public void applyJailPlayer(Player player) {
     Crime crime = players.get(player.getUniqueId().toString());
     if(crime != null && jails.containsKey(crime.getLocation())) {
@@ -162,5 +145,9 @@ public class PokkeSecurity extends JavaPlugin {
     } else {
       return new ItemStack(Material.AIR);
     }
+  }
+
+  public @Nullable Crime getCrime(Player player) {
+    return players.get(player.getUniqueId().toString());
   }
 }
