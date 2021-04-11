@@ -1,6 +1,23 @@
 name: PokkeSecurity
 main: hm.moe.pokkedoll.psec.PokkeSecurity
-version: '0.1'
+version: '0.6'
 api-version: '1.16'
 authors: ['Emorard']
 website: 'https://github.com/PokkeDoll/PokkeSecurity'
+
+commands:
+  jail:
+    permission: jail.jail
+    description: "プレイヤーを投獄する"
+  jail-all:
+    permission: jail.all
+    description: "あ"
+  jail-release:
+    permission: jail.release
+    description: "プレイヤーを開放する"
+  jail-set:
+    permission: jail.set
+    description: "牢獄の管理を行う"
+  jail-info:
+    permission: jail.info
+    description: "投獄されたプレイヤーの状態を見る"
