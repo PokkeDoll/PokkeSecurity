@@ -1,0 +1,6 @@
+name: PokkeSecurity
+main: hm.moe.pokkedoll.psec.PokkeSecurity
+version: '0.1'
+api-version: '1.16'
+authors: ['Emorard']
+website: 'https://github.com/PokkeDoll/PokkeSecurity'
